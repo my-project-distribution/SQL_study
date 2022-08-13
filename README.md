@@ -1,2 +1,2 @@
 # SQL_study
-학교 SQL공부
+sql 공부
