@@ -5,7 +5,7 @@
 --where(선택) 조건
 select *
 from emp;
-
+ 
 --as는 생략가능하다.
 select empno as 사원번호,ename as 사원이름
 from emp;
