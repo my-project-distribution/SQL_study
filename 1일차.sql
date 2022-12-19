@@ -73,4 +73,4 @@ rollback;
 insert into emp
 values (8000,'seokjin','singer',7839,'91/12/31',300,null,null)--null 값을 적어줌
 insert into emp (empno , ename , job , sal)
-values(8001,'geunchan','teacher',6000);--나머지는 null값으로 들어간다(null 값을 생략했다.)
+values(8001,'geunchan','teacher',6000);--나머지는 null값으로 들어간다(null 값을 생략했다.) 
