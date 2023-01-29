@@ -9,6 +9,7 @@ from emp;
 --as는 생략가능하다.
 select empno as 사원번호,ename as 사원이름
 from emp;
+
 --문제1. 사원들 중에 이름이 JONES인 사원의 사원번호와 급여를 출력하시오
 select empno,SAL
 from emp
@@ -25,18 +26,23 @@ from emp
 where COMM is null;
 
 --두가지 조건이 있다면 where 절에 and를 활용한다.둘 중 하나만 만족해도된다면 or를 사용한다.
+
 --문제4. 사원 중에서 고용일이 81년 12월 3일이면서 급여가 950원인 사원의 이름과 직업을 출력
 select ename,job
 from emp
 where HIREDATE like '81/12/03' and SAL = 950;
 
 --IN, NOT IN
+
 --문제5. IN을 활용하여 사원 중에서 급여가 1600,1250,2450,3000원 중 하나라도 속하는 직원의 번호와 이름을 출력
 select EMPNO,ENAME
 from emp
 where SAL IN (1600,1250,2450,3000);
+
 -- no in을 붙이면 여기 속해 있지 않은 것들이 출력
+
 --between a and B :a부터 b까지
+
 --문제6.급여가 2500원이상 ,3000이하인 직원의 이름과 직업을 출력
 select ename,job
 from emp
